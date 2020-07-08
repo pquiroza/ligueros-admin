@@ -1,0 +1,68 @@
+
+<div class="steppers-container row">
+<div class="col-md-12 col-lg-6 col-xxxl-6">
+    <nb-card status="success">
+  <nb-card-header>
+    Campeonatos Activos
+  </nb-card-header>
+
+  <ng2-smart-table [settings]="settings" [source]="datos" (createConfirm)="onCreateConfirm($event)"></ng2-smart-table>
+
+    <nb-card-body>
+
+    </nb-card-body>
+  </nb-card>
+</div>
+<div class="col-md-2 col-lg-6 col-xxxl-6">
+
+      <nb-card status="success">
+    <nb-card-header>
+      Estado de la Cuenta
+    </nb-card-header>
+    <ngx-status-card title="Estado" type="success">
+      <i class="nb-lightbulb"></i>
+    </ngx-status-card>
+      <nb-card-body>
+
+      </nb-card-body>  
+    </nb-card>
+    <nb-card status="success">
+  <nb-card-header>
+    Colaboradores
+  </nb-card-header>
+
+    <nb-card-body>
+      <nb-list>
+        <nb-list-item>
+          <nb-user size="large"
+          name="Pedro Quiroz"
+          title="CEO"
+          badgeText="99+"
+          badgeStatus="success"
+          badgePosition="bottom right">
+ </nb-user>
+          </nb-list-item>
+          <nb-list-item>
+            <nb-user size="large"
+            name="Alejandro Fuentes"
+            title="Asistente"
+            badgeText="99+"
+            badgeStatus="warning"
+            badgePosition="bottom right">
+   </nb-user>
+   </nb-list-item>
+   <nb-list-item>
+     <nb-user size="large"
+     name="Daniel cacho"
+     title="Cacho"
+     badgeText="99+"
+     badgeStatus="danger"
+     badgePosition="bottom right">
+</nb-user>
+     </nb-list-item>
+        </nb-list>
+
+    </nb-card-body>
+  </nb-card>
+</div>
+</div>
